@@ -10,26 +10,6 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 
 @Mixin(MinecraftClient.class)
 public class MixinMinecraftClient {
-	/**
-	 * @author LoganDark
-	 */
-	@Overwrite
-	public boolean isModded() {
-		return false;
-	}
-
-	@Redirect(
-		method = "method_1509", // "Is Modded" lambda in addSystemDetailsToCrashReport
-		at = @At(
-			value = "INVOKE",
-			target = "Ljava/lang/Class;getSigners()[Ljava/lang/Object;"
-		),
-		remap = false
-	)
-	private static Object[] onGetSigners(Class aClass) {
-		return new Object[0]; // not null
-	}
-
 	@Redirect(
 		method = "<init>",
 		at = @At(
