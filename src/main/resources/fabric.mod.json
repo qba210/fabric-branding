@@ -5,7 +5,7 @@
 
 	"name": "Branding",
 	"description": "Makes Minecraft think it's not modded",
-	"authors": ["LoganDark"],
+	"authors": ["LoganDark", "qba21"],
 	"contact": {
 		"sources": "https://github.com/LoganDark/fabric-branding",
 		"website": "https://github.com/LoganDark/fabric-branding",
@@ -24,7 +24,7 @@
 
 	"depends": {
 		"fabricloader": "*",
-		"minecraft": "1.19.x"
+		"minecraft": "1.18.x"
 	},
 	"suggests": {}
 }

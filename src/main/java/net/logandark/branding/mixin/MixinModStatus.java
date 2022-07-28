@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 @Mixin(ModStatus.class)
 public class MixinModStatus {
 	/**
-	 * @author qba210
+	 * @author qba21
 	 * @reason
 	 */
 	@Overwrite
@@ -18,7 +18,7 @@ public class MixinModStatus {
 	}
 
 	/**
-	 * @author qba210
+	 * @author qba21
 	 * @reason
 	 */
 	@Overwrite
